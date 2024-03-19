@@ -37,4 +37,5 @@ De Blueprint biedt best practices, configuratiehandleidingen en sjablonen. Deze 
 
 ## Contact
 
-* GitHub
+* Jordy Herber: (https://www.linkedin.com/in/jordyherber/)
+* Paul Erlings: (https://www.linkedin.com/in/paulerlings/)
