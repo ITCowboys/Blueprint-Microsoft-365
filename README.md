@@ -33,7 +33,7 @@ The Blueprint provides best practices, configuration guides, and templates. Thes
 * IT professionals implementing cloud services
 * Management, information security experts, and auditors assessing cloud service implementation
 * Sponsors and other stakeholders approving cloud services
-* Others with a technical interest in monitoring, assessing, authorizing, or managing cloud services...
+* Others with a technical interest in monitoring, assessing, authorizing, or managing cloud services
 
 ## Contact
 
