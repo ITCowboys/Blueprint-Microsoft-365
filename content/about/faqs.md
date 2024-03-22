@@ -1,12 +1,4 @@
----
-title: "Frequently Asked Questions (FAQs)"
-linkTitle: "FAQs"
-weight: 5
-type: docs
-description:
----
-
-### What is ASD's *Blueprint for Secure Cloud*?
+### What is Blueprint-Microsoft-365's *Blueprint for Secure Cloud*?
 
 Blueprint-Microsoft-365 provides better practice guidance, as well as configuration guides and templates covering risk management, architecture and standard operating procedures developed as per the controls, configuration and deployment of collaborative and secure cloud and hybrid workspaces, with a current focus on Microsoft 365.
 
