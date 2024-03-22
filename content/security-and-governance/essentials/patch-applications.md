@@ -1,28 +1,15 @@
----
-title: "Patch Applications"
-linkTitle: "Patch Applications"
-weight: 010
-type: docs
-description: This page provides a template and guidance to assist organisations in documenting their approach to patching applications, as per the Essential Eight Maturity Model, associated with their system(s) built on ASD's Blueprint for Secure Cloud.
+Patch Applications
 ---
 
-{{% alert title="Instruction" color="dark" %}}
-
-The Essential Eight sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
+The Essential  sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how the organisation must scope, build, document, or assess its system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the Essential Eight Maturity levels associated with implementation of their system. When complete, remove any instructional boxes throughout. 
 
-{{% /alert %}}
-
-{{% alert title="Blueprint guidance" color="info" %}}
-
 For applicable government organisations to meet the minimum requirements established under the [*Protective Security Policy Framework* (PSPF)](https://www.protectivesecurity.gov.au/publications-library/policy-10-safeguarding-data-cyber-threats) maturity model, these organisations must implement Maturity Level Two for each of the below components of ASD's [*Essential Eight Maturity Model*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight).
 
 As with implementation of ISM controls, the Blueprint does not itself *achieve* any particular Essential Eight Maturity levels, but rather assists organisations in designing and building systems to achieve their desired maturity level based on their own operating context.
-
-{{% /alert %}}
 
 ### Applicability
 
@@ -45,17 +32,9 @@ The Patch Applications mitigation strategy is applicable to the appropriate patc
 
 #### Asset discovery
 
-{{% alert title="Essential Eight guidance" color="success" %}}
-
 All maturity levels require that an automated method of asset discovery is used at least fortnightly to support the detection of assets for subsequent vulnerability scanning activities.
 
-{{% /alert %}}
-
-{{% alert title="Blueprint guidance" color="info" %}}
-
 The Blueprint design does not provide guidance for direct management of asset discovery, though the below template serves as a guide of a typical implementation of this section for systems built using the Blueprint.
-
-{{% /alert %}}
 
 `<ASSET-DISCOVERY-TOOL>` is used to scan for all assets within `<SYSTEM-NAME>`.
 
@@ -64,8 +43,6 @@ The Blueprint design does not provide guidance for direct management of asset di
 `<INSERT ADDITIONAL INFORMATION AS APPROPRIATE>`
 
 #### Vulnerability scanning
-
-{{% alert title="Essential Eight guidance" color="success" %}}
 
 All maturity levels require that a vulnerability scanner is used to identify missing patches or updates for vulnerabilities in a variety of applications per the below table, that this vulnerability scanner uses an up-to-date vulnerability database.
 
@@ -78,17 +55,11 @@ All maturity levels require that a vulnerability scanner is used to identify mis
 
 **For the purposes of the above table, "Core Applications" are defined as office productivity suites, web browsers and their extensions, email clients, PDF software and security products.*
 
-{{% /alert %}}
-
-{{% alert title="Blueprint guidance" color="info" %}}
-
 The Blueprint design does not provide guidance for direct management of vulnerability scanning, though the below template serves as a guide of a typical implementation of this section for systems built using the Blueprint.
 
 Given that scanning is generally performed on an asset basis rather than an application basis, the below describes the scanning of all applications on endpoints on a weekly basis, while on-premise servers are described as being scanned on a daily basis (to account for the requirements outlined in *Patch Operating Systems*), particularly to account for internet facing servers including Exchange servers.
 
 It is assumed for the below that the system built using the Blueprint does not host online services.
-
-{{% /alert %}}
 
 `<VULNERABILITY-SCANNING-TOOL>` is used to scan for all application vulnerabilities on endpoints and servers within `<SYSTEM-NAME>`. `<VULNERABILITY-SCANNING-TOOL>` is configured to update its vulnerability database on a `<nightly>` basis.
 
@@ -130,13 +101,7 @@ The below table outlines the time-frames for different application types, as wel
 
 **For the purposes of the above table, "Core Applications" are defined as office productivity suites, web browsers and their extensions, email clients, PDF software and security products.*
 
-{{% /alert %}}
-
-{{% alert title="Blueprint guidance" color="info" %}}
-
 The Blueprint provides guidance for using Microsoft Intune to deploy applications and patches to workstations, though the use of this mechanism generally relies on manual processes to choose to deploy relevant patches.
-
-{{% /alert %}}
 
 ##### Windows endpoints
 
@@ -168,11 +133,7 @@ Patches for vulnerabilities in all other applications on `<SYSTEM-NAME>` hybrid 
 
 #### Removal of unsupported applications
 
-{{% alert title="Essential Eight guidance" color="success" %}}
-
 All maturity levels require that online services, as well as any office productivity suites, web browsers and their extensions, email clients, PDF software, Adobe Flash Player, and security products that are no longer supported by vendors are removed.
-
-{{% /alert %}}
 
 ##### Windows endpoints
 
