@@ -11,5 +11,5 @@ Text included in the guidance boxes throughout this template should be deleted f
 
 [Download SSP Matrix Template (.xlsx)](</content/tools/Information%20Security/Cloud%20Controls%20Matrix%20Template%20(March%202024).xlsx>)
 
-[Download SSP Annex Template (.xlsx)](</content/tools/Information%20Security/System Security Plan Annex Template (March 2024).xlsx).xlsx>)
+[Download SSP Annex Template (.xlsx)](</content/tools/Information%20Security/System Security Plan Annex Template (March 2024).xlsx>)
 
