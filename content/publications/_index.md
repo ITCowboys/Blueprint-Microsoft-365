@@ -24,7 +24,7 @@ The Microsoft 365 Blueprint covers a wide range of topics, including:
 
 The following publications can be used for a deeper understanding of the requirements and needs:
 
-| Title				                 
-| ----------------------------------------------------------------------------------------
-| 10 Safeguarding data from cyber threats  
+| Title												 | Link	                 
+| ---------------------------------------------------| ------------------------------- |
+| 10 Safeguarding data from cyber threats            | download
 
