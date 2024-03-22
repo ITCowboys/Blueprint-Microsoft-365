@@ -1,29 +1,15 @@
----
-title: "Restrict Microsoft Office Macros"
-linkTitle: "Restrict Microsoft Office Macros"
-weight: 035
-type: docs
-description: This page provides a template and guidance to assist organisations in documenting their approach to restricting Microsoft Office macros, as per the Essential Eight Maturity Model, associated with their system(s) built on ASD's Blueprint for Secure Cloud.
+Restrict Microsoft Office Macros
 ---
 
-{{% alert title="Instruction" color="dark" %}}
-
-The Essential Eight sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
+The Essential sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how the organisation must scope, build, document, or assess its system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the Essential Eight Maturity levels associated with implementation of their system. When complete, remove any instructional boxes throughout. 
 
-
-{{% /alert %}}
-
-{{% alert title="Blueprint guidance" color="info" %}}
-
 For applicable government organisations to meet the minimum requirements established under the [*Protective Security Policy Framework* (PSPF)](https://www.protectivesecurity.gov.au/publications-library/policy-10-safeguarding-data-cyber-threats) maturity model, these organisations must implement Maturity Level Two for each of the below components of ASD's [*Essential Eight Maturity Model*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight).
 
 As with implementation of ISM controls, the Blueprint does not itself *achieve* any particular Essential Eight Maturity levels, but rather assists organisations in designing and building systems to achieve their desired maturity level based on their own operating context.
-
-{{% /alert %}}
 
 ### Applicability
 
@@ -38,8 +24,6 @@ The Restrict Microsoft Office Macros mitigation strategy is applicable to restri
 |                     |                    |
 
 ### Implementation
-
-{{% alert title="Essential Eight guidance" color="success" %}}
 
 All Maturity levels require that for all systems and users:
 * all Microsoft Office macros are disabled, unless the user has a demonstrated business requirement
@@ -61,8 +45,6 @@ Maturity Level Three also requires that for user accounts that have a demonstrat
 * an untrusted publisher
 * signatures other than V3 signatures.
 
-{{% /alert %}}
-
 #### Windows endpoints
 
 `<SYSTEM-NAME>` restricts macro execution to only those signed by a trusted digital certificate in accordance with ASD's [*Microsoft Office Macro Security*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/restricting-microsoft-office-macros) guidance. This includes blocking Microsoft Office macros originating from the internet and preventing standard users from modifying macro security settings in all Microsoft Office applications.
@@ -78,15 +60,11 @@ Microsoft Office macros are blocked from making Win32 API calls using Attack Sur
 
 #### Hybrid servers
 
-{{% alert title="Blueprint guidance" color="info" %}}
-
 While the Blueprint does not provide specific guidance for hardening user applications for servers, the section below is provided for organisations to describe their implementation for a system, where this management is included within the authorisation boundary for a system built using the Blueprint.
 
 Generally, much of the applicable software (such as Microsoft Office) is not installed on servers, and so together with the proper implementation of application control and system monitoring, is likely to be limited in scope. However, implementation of this hardening is also often completed as part of a separate system specific to these servers.
 
 Where the organisation appropriately assesses this within another document, it may choose to remove its implementation and assessment from this particular SSP Annex, though it is advised that organisations consider tracking this here for a holistic capture of the system context and associated risk.
-
-{{% /alert %}}
 
 Office productivity suites are not installed on `<SYSTEM-NAME>` servers.
 
