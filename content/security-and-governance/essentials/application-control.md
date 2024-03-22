@@ -1,12 +1,5 @@
+Application Control
 ---
-title: "Application Control"
-linkTitle: "Application Control"
-weight: 030
-type: docs
-description: This page provides a template and guidance to assist organisations in documenting their approach to application control, as per the Essential Eight Maturity Model, associated with their system(s) built on ASD's Blueprint for Secure Cloud.
----
-
-{{% alert title="Instruction" color="dark" %}}
 
 The Essential Eight sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
 
