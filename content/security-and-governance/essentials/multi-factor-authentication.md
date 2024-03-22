@@ -1,28 +1,15 @@
----
-title: "Multi-factor Authentication"
-linkTitle: "Multi-factor Authentication"
-weight: 020
-type: docs
-description: This page provides a template and guidance to assist organisations in documenting their approach to Multi-Factor Authentication, as per the Essential Eight Maturity Model, associated with their system(s) built on ASD's Blueprint for Secure Cloud.
+Multi-factor Authentication
 ---
 
-{{% alert title="Instruction" color="dark" %}}
-
-The Essential Eight sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
+The Essential sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how the organisation must scope, build, document, or assess its system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the Essential Eight Maturity levels associated with implementation of their system. When complete, remove any instructional boxes throughout. 
 
-{{% /alert %}}
-
-{{% alert title="Blueprint guidance" color="info" %}}
-
 For applicable government organisations to meet the minimum requirements established under the [*Protective Security Policy Framework* (PSPF)](https://www.protectivesecurity.gov.au/publications-library/policy-10-safeguarding-data-cyber-threats) maturity model, these organisations must implement Maturity Level Two for each of the below components of ASD's [*Essential Eight Maturity Model*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight).
 
 As with implementation of ISM controls, the Blueprint does not itself *achieve* any particular Essential Eight Maturity levels, but rather assists organisations in designing and building systems to achieve their desired maturity level based on their own operating context.
-
-{{% /alert %}}
 
 ### Applicability
 
@@ -43,8 +30,6 @@ In particular, this is applicable to the configuration of Microsoft Entra ID `AN
 ### Implementation
 
 #### Authentication methods used
-
-{{% alert title="Essential Eight guidance" color="success" %}}
 
 The Essential Eight Maturity Model requires that all MFA used is either:
 * something users have and something users know, or 
@@ -71,15 +56,9 @@ Applicability to other systems and services is determined by the following table
 |                    | Unprivileged Users: |  -  |              -               | Phishing Resistant<br>*Only* |
 |                    |                     |     |                              |                              |
 
-{{% /alert %}}
-
-{{% alert title="Blueprint guidance" color="info" %}}
-
 The use of Microsoft services constitutes user access to online services per the above table, which at Maturity Level two and three requires phishing-resistant multifactor authentication to be used. For consideration of options for authentication factors, see [Blueprint Design: Authentication]({{<ref "design/platform/identity/authentication.md">}}), noting that use of the Microsoft Authenticator application meets a maximum of Maturity Level Three.
 
 Similarly, authentication to Windows endpoints constitutes access to other systems, and should similarly require phishing resistant multifactor authentication as described above.
-
-{{% /alert %}}
 
 Microsoft Entra ID is configured as the central store for identity and access management within `<SYSTEM-NAME>`, acting as central management for user authentication and authorisation to various Single Sign On (SSO) services, including as for access to `<SYSTEM-NAME>` Windows endpoints.
 
@@ -101,8 +80,6 @@ Microsoft Entra ID is configured to utilise the following authentication methods
 Maturity Levels 2 and 3 require that
 * all successful and unsuccessful MFA events to be captured from all systems and services and centrally logged
 * event logs are protected from unauthorised modification and deletion.                         
-
-{{% /alert %}}
 
 The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in accordance with `<ORGANISATION-NAME>`’s Event Logging Policy, and includes the aggregation of the following logs into Microsoft Log Analytics:
 
@@ -141,8 +118,6 @@ The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in a
 
 #### Monitoring and response
 
-{{% alert title="Essential Eight guidance" color="success" %}}
-
 Maturity Levels 2 and 3 require all successful and unsuccessful MFA event logs from the following systems to be analysed in a timely manner to detect cyber security events:
 
 | System                       | ML2 | ML3 |
@@ -159,10 +134,6 @@ Both Maturity Levels 2 and 3 also require the following:
 * cyber security incident response plan is enacted.
 * incident is reported to the CISO, or one of their delegates
 * incident is reported to ASD. 
-
-{{% /alert %}}
-
-{{% alert title="Blueprint guidance" color="info" %}}
 
 The Blueprint provides limited guidance to support organisations in developing an approach for the response to cyber security incidents. However, the section below is provided for organisations to describe the measures implemented within their system. 
 
