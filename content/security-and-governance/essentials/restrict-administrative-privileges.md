@@ -1,28 +1,15 @@
----
-title: "Restrict Administrative Privileges"
-linkTitle: "Restrict Administrative Privileges"
-weight: 025
-type: docs
-description: This page provides a template and guidance to assist organisations in documenting their approach to restricting administrative privileges, as per the Essential Eight Maturity Model, associated with their system(s) built on ASD's Blueprint for Secure Cloud.
+Restrict Administrative Privileges
 ---
 
-{{% alert title="Instruction" color="dark" %}}
-
-The Essential Eight sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
+The Essential sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how the organisation must scope, build, document, or assess its system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the Essential Eight Maturity levels associated with implementation of their system. When complete, remove any instructional boxes throughout. 
 
-{{% /alert %}}
-
-{{% alert title="Blueprint guidance" color="info" %}}
-
 For applicable government organisations to meet the minimum requirements established under the [*Protective Security Policy Framework* (PSPF)](https://www.protectivesecurity.gov.au/publications-library/policy-10-safeguarding-data-cyber-threats) maturity model, these organisations must implement Maturity Level Two for each of the below components of ASD's [*Essential Eight Maturity Model*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight).
 
 As with implementation of ISM controls, the Blueprint does not itself *achieve* any particular Essential Eight Maturity levels, but rather assists organisations in designing and building systems to achieve their desired maturity level based on their own operating context.
-
-{{% /alert %}}
 
 ### Applicability
 
@@ -52,13 +39,7 @@ The Restrict Administrative Privileges mitigation strategy is applicable to rest
 |                               | Disabled after 12 months unless revalidate:  |  -  | Yes | Yes |
 |                               |                                              |     |     |     |
 
-{{% /alert %}}
-
-{{% alert title="Blueprint guidance" color="info" %}}
-
 The Blueprint does not currently provide guidance for automating the disabling of accounts. Organisations building a system using the Blueprint should implement appropriate organisational processes for both validating initial privileged access requests, and disabling them where appropriate.
-
-{{% /alert %}}
 
 `<DETAIL PROCESSES FOR PRIVILEGED ACCESS REQUESTS AS APPROPRIATE>`
 
@@ -81,13 +62,7 @@ All maturity levels require that privileged users use separate privileged and un
 | Administrative activities are conducted on Secure Admin Workstations:            |  -  |  -  | Yes |
 |                                                                                  |     |     |     |
 
-{{% /alert %}}
-
-{{% alert title="Blueprint guidance" color="info" %}}
-
 The Blueprint does not currently provide guidance for implementing hardened operating environments administrative activities, including jump servers of Secure Administrative Workstations. The implementation below describes a typical Maturity Level Three implementation for a system built using the Blueprint, and should be adapted to whatever implementation is used for the final system.
-
-{{% /alert %}}
 
 ##### Unprivileged operating environment
 
@@ -120,10 +95,6 @@ The following restrictions are required for privileged accounts:
 |                                                                     | Just-in-time administration is used                                                                  |  -  |  -  | Yes |
 |                                                                     |                                                                                                      |     |     |     |
 
-{{% /alert %}}
-
-{{% alert title="Blueprint guidance" color="info" %}}
-
 The Blueprint does not currently provide guidance for restricting privileged account activities. The implementation below describes a typical Maturity Level Three implementation for a system built using the Blueprint, and should be adapted to whatever implementation is used for the final system.
 
 {{% /alert %}}
@@ -136,15 +107,11 @@ Furthermore, these accounts have appropriate Role Based Access Control applied, 
 
 #### Management of credentials
 
-{{% alert title="Essential Eight guidance" color="success" %}}
-
 Maturity Levels Two and Three require that credentials for the following account types are long, unique, unpredictable and managed:
 
 * Break Glass Accounts
 * Local Administrator Accounts
 * Service Accounts
-
-{{% /alert %}}
 
 `<SYSTEM-NAME>` provides a central identity store that governs and grants all user access prior to accessing resources on the system. Users are assigned specific user roles according to their business requirements.
 
@@ -154,15 +121,11 @@ Credentials for Break Glass Accounts, local administrator accounts and service a
 
 #### Protecting credentials
 
-{{% alert title="Essential Eight guidance" color="success" %}}
-
 Maturity Level Three Requires the following functionality to be enabled for protecting accounts:
 * Memory integrity
 * Local Security Authority protection
 * Credential Guard
 * Remote Credential Guard
-
-{{% /alert %}}
 
 `<SYSTEM-NAME>` implements the following required protections for user accounts:
 
@@ -178,13 +141,9 @@ Maturity Level Three Requires the following functionality to be enabled for prot
 
 #### Logging
 
-{{% alert title="Essential Eight guidance" color="success" %}}
-
 Maturity Levels Two and Three require that
 * all Allowed and blocked application control events to be captured from all systems and services and centrally logged
 * event logs are protected from unauthorised modification and deletion.                         
-
-{{% /alert %}}
 
 The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in accordance with `<ORGANISATION-NAME>`’s Event Logging Policy, and includes the aggregation of the following logs into Microsoft Log Analytics:
 
@@ -208,8 +167,6 @@ The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in a
 
 #### Monitoring and response
 
-{{% alert title="Essential Eight guidance" color="success" %}}
-
 Maturity Levels Two and Three require all Privileged access, privileged account, and group management event logs from the following systems to be analysed in a timely manner to detect cyber security events:
 
 | System                       | ML2 | ML3 |
@@ -225,13 +182,7 @@ Both Maturity Levels Two and Three also require the following:
 * incident is reported to the Chief Information Security Officer, or one of their delegates
 * incident is reported to ASD. 
 
-{{% /alert %}}
-
-{{% alert title="Blueprint guidance" color="info" %}}
-
 While the Blueprint provides limited guidance to support organisations in developing an approach for the response to cyber security incidents, the section below is provided for organisations to describe the measures implemented within their system. Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
-
-{{% /alert %}}
 
 `<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cyber security incidents. 
 
