@@ -1,28 +1,15 @@
----
-title: "User Application Hardening"
-linkTitle: "User Application Hardening"
-weight: 040
-type: docs
-description: This page provides a template and guidance to assist organisations in documenting their approach to use application hardening, as per the Essential Eight Maturity Model, associated with their system(s) built on ASD's Blueprint for Secure Cloud.
+User Application Hardening
 ---
 
-{{% alert title="Instruction" color="dark" %}}
-
-The Essential Eight sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
+The Essential sections of a System Security Plan (SSP) should document the Essential Eight Maturity levels associated with implementation of a system. As with other sections of the SSP, information in the email section should be documented according to the relevant controls outlined in ASD's ISM and the SSP Annex. 
 
 All template text refers to a typical implementation of a system built using the Blueprint, and includes reference to organisational policies, processes and technical configurations to be implemented in addition to the technical controls that may be configured using guidance from the Blueprint. Any implementation implied by the below text should not be considered as prescriptive of how the organisation must scope, build, document, or assess its system.
 
 When completing the below template, organisations should insert and update information where relevant to ensure it accurately represents the Essential Eight Maturity levels associated with implementation of their system. When complete, remove any instructional boxes throughout. 
 
-{{% /alert %}}
-
-{{% alert title="Blueprint guidance" color="info" %}}
-
 For applicable government organisations to meet the minimum requirements established under the [*Protective Security Policy Framework* (PSPF)](https://www.protectivesecurity.gov.au/publications-library/policy-10-safeguarding-data-cyber-threats) maturity model, these organisations must implement Maturity Level Two for each of the below components of ASD's [*Essential Eight Maturity Model*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight).
 
 As with implementation of ISM controls, the Blueprint does not itself *achieve* any particular Essential Eight Maturity levels, but rather assists organisations in designing and building systems to achieve their desired maturity level based on their own operating context.
-
-{{% /alert %}}
 
 ### Applicability
 
@@ -39,8 +26,6 @@ The User Application Hardening mitigation strategy is applicable to hardening of
 ### Implementation
 
 #### User application hardening
-
-{{% alert title="Essential Eight guidance" color="success" %}}
 
 All maturity levels require:
 
@@ -69,8 +54,6 @@ In addition, Maturity Level Three requires:
 * .NET Framework 3.5 (includes .NET 2.0 and 3.0) is disabled or removed,
 * Windows PowerShell 2.0 is disabled or removed, and
 * PowerShell is configured to use Constrained Language Mode.
-
-{{% /alert %}}
 
 ##### Workstations
 
@@ -173,16 +156,12 @@ PDF software is not installed on `<SYSTEM-NAME>` servers.
 
 #### Logging
 
-{{% alert title="Essential Eight guidance" color="success" %}}
-
 Maturity Levels Two and Three require that
 * all command line process creation, PowerShell module logging, script block logging and transcription events to be captured from all of the following:
 * workstations
 * internet-facing servers
 * non-internet-facing servers
 * event logs are protected from unauthorised modification and deletion.                        
-
-{{% /alert %}}
 
 The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in accordance with `<ORGANISATION-NAME>`’s Event Logging Policy, and includes the aggregation of the following logs into Microsoft Log Analytics:
 
@@ -212,8 +191,6 @@ The collection of event logs for monitoring of `<SYSTEM-NAME>` is performed in a
 
 #### Monitoring and response
 
-{{% alert title="Essential Eight guidance" color="success" %}}
-
 Maturity Levels Two and Three require all command line process creation, PowerShell module logging, script block logging and transcription event logs from the following systems to be analysed in a timely manner:
 
 | System                       | ML2 | ML3 |
@@ -229,13 +206,7 @@ Both Maturity Levels Two and Three also require the following:
 * incident is reported to the Chief Information Security Officer, or one of their delegates
 * incident is reported to ASD.
 
-{{% /alert %}}
-
-{{% alert title="Blueprint guidance" color="info" %}}
-
 While the Blueprint provides limited guidance to support organisations in developing an approach for the response to cyber security incidents, the section below is provided for organisations to describe the measures implemented within their system. Effective implementation of these controls is generally built on a combination of system-specific and whole of organisation processes, and may include the coordination of a number of teams and staff across an organisation.
-
-{{% /alert %}}
 
 `<SYSTEM-NAME>` utilises the Microsoft 365 Defender portal and `<SIEM-PRODUCT>` to assist in the identification of cyber security incidents. 
 
