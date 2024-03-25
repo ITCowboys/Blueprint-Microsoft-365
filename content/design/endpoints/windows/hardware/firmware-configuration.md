@@ -1,8 +1,7 @@
+Firmware Configuration
 ---
-title: "Firmware Configuration"
-weight: 15
-description: "This section describes the design decisions associated with firmware configuration on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with firmware configuration on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 The firmware is the software that provides the interface between the hardware and the operating system. Firmware configuration and capabilities can directly influence the security features of an operating system.
 Important firmware security capabilities are detailed below:
@@ -28,8 +27,6 @@ UEFI 2.3.1 is a requirement for the use of Device Guard.
 
 Secure Boot is required for the use of Credential Guard.
 
-{{% alert title="Design Decisions" color="warning" %}}
-
 | Decision Point                                               | Design Decision            | Justification                                                                                                            |
 |--------------------------------------------------------------|----------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | UEFI version                                                 | At least 2.3.1             | This is minimum UEFI version required for Device Guard.                                                                  |
@@ -41,8 +38,6 @@ Secure Boot is required for the use of Credential Guard.
 | USB Boot                                                     | Disabled                   | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance.                                                                       |
 | SD Card Boot                                                 | Disabled                   | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance.                                                                       |
 | Allow boot locations other than the internal hard disk drive | Require password           | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance.                                                                       |
-
-{{% /alert %}}
 
 ### Related information
 
