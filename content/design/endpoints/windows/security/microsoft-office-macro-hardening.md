@@ -1,8 +1,7 @@
+Microsoft Office Macro Hardening
 ---
-title: "Microsoft Office Macro Hardening"
-weight: 45
-description: "This section describes the design decisions associated with Microsoft Office macros on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with Microsoft Office macros on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Microsoft Office files can include Visual Basic for Applications (VBA) programming code (macro) embedded into the document.
 
@@ -18,7 +17,6 @@ Where trusted locations are used, ASD's recommends that when using trusted locat
 
 Microsoft Office products can log macro execution attempts (both successful and failures) by enabling the Trust Center logging feature. This provides valuable information for incident response and digital forensics activities. The Trust Center logs are not written to the Windows Event Log but instead as an individual file per Microsoft Office product to the C:\Users\USERNAME\AppData\Local\Microsoft\Office\TCDiag directory.
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point          | Design Decision                                                 | Justification                                                                                                                                        |
 |-------------------------|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -94,7 +92,6 @@ Microsoft Office products can log macro execution attempts (both successful and 
   * Allow Trusted Locations on the network: Disabled
   * Disable all trusted locations: Enabled
 
-  {{% /alert %}}
 
 ### Related information
 
