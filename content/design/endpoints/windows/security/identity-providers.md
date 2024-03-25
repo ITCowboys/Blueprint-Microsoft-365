@@ -1,8 +1,7 @@
+Identity Providers
 ---
-title: "Identity Providers"
-weight: 25
-description: "This section describes the design decisions associated with identity providers for Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with identity providers for Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 The identity providers section considers the different methods of logging on to the Windows 10 and 11 device. The local administrator account is addressed in a separate section.
 Windows 10 and 11 provides various user account types or identity providers. This section outlines the identity providers that can be implemented for a Windows 10 and 11 device.
@@ -12,7 +11,6 @@ Windows 10 and 11 provides various user account types or identity providers. Thi
 * **Microsoft Entra ID** - Microsoft Entra ID is Microsoft's cloud directory and identity management service. Microsoft Entra ID includes a full suite of identity management capabilities. Microsoft Entra ID is a prerequisite for Microsoft Intune mobile device management including Conditional Access.
 * **Microsoft Account** - A Microsoft Account is an email address issued by or linked to a Microsoft authentication service. A Microsoft Account is a public version of a Microsoft Entra ID account. If this account is disabled certain features such as Windows Store cannot function.
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point                                  | Design Decision       | Justification                                                                                                                      |
 |-------------------------------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -22,29 +20,24 @@ Windows 10 and 11 provides various user account types or identity providers. Thi
 | Windows Hello for Business                      | Organisation decision | As per ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance, organisations may consider if Windows Hello for Business is suitable for their environment. |
 | Windows Hello for Business Configuration Method | Organisation decision | As per ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance, organisations may consider if Windows Hello for Business is suitable for their environment. |
 
-{{% /alert %}}
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point                  | Design Decision | Justification                               |
 |---------------------------------|-----------------|---------------------------------------------|
 | Azure Active Directory Accounts | Enabled         | Machines will be Microsoft Entra ID Joined. |
 | Domain Accounts                 | Disabled        | Machine will be Microsoft Entra ID Joined.  |
 
-{{% /alert %}}
 
 ### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point                  | Design Decision | Justification                                                                                                                                       |
 |---------------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Azure Active Directory Accounts | Enabled         | Machines will be Hybrid Microsoft Entra ID Joined.                                                                                                  |
 | Domain Accounts                 | Enabled         | Users will log onto devices using credentials which originate in an on-premises domain.<br>Machines will also be joined to the organisation domain. |
 
-{{% /alert %}}
 
 ### Related information
 
