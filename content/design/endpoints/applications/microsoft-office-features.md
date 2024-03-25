@@ -1,8 +1,7 @@
+Microsoft Office Features
 ---
-title: "Microsoft Office Features"
-weight: 10
-description: "This section describes the design decisions associated with installation of Microsoft Office features."
----
+
+This section describes the design decisions associated with installation of Microsoft Office features.
 
 The Microsoft 365 Apps for Enterprise - formerly Office 365 ProPlus - features include the application set that will be provided to the users. The Microsoft Office feature section includes the details of the following components:
 
@@ -16,7 +15,6 @@ The Microsoft 365 Apps for Enterprise - formerly Office 365 ProPlus - features i
 * Microsoft Word
 * Microsoft OneDrive Desktop
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point              | Design Decision | Justification                         |
 |-----------------------------|-----------------|---------------------------------------|
@@ -29,7 +27,6 @@ The Microsoft 365 Apps for Enterprise - formerly Office 365 ProPlus - features i
 | Microsoft Teams             | Enabled         | Required to enable user productivity. |
 | Microsoft Office Access     | Disabled        | Not installed by default.             |
 
-{{% /alert %}}
 
 ### Related information
 
