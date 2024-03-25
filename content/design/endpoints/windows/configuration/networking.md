@@ -1,8 +1,7 @@
+Networking
 ---
-title: "Networking"
-weight: 110
-description: "This section describes the design decisions associated with the networking technologies built into Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with the networking technologies built into Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Windows 10 and 11 contains networking technologies built into the operating system. These features enable Windows to communicate with other networked devices including those on the Internet.
 
@@ -11,8 +10,6 @@ IPv6 can be enabled or disabled within Windows 10 and 11 depending on the networ
 Windows provides support for several wireless networking technologies that enable devices to connect to a wireless network. The two most popular technologies supported in Windows currently are Wi-Fi and Mobile Broadband networking.
 
 802.1x ensures that only appropriate users or devices can connect to a PROTECTED network and that data is secure at the radio transmission level. The Single Sign-On (SSO) feature executes Layer 2 network authentication at the appropriate time given the network security configuration, integrating with the user's Windows logon experience.
-
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point         | Design Decision                                                  | Justification                                                                                                                                             |
 |------------------------|------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -23,11 +20,7 @@ Windows provides support for several wireless networking technologies that enabl
 | Network Bridging       | Disabled                                                         | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance.                                                                                                      |
 | Wake on LAN (WoL)      | Configured via existing MECM solution if in use                  | Wake on LAN configured to enable existing MECM management tasks to operate on computers regardless of power status.                                        |
 
-{{% /alert %}}
-
 ### Wireless configuration
-
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Configuration                                             | Value      | Description                                                         |
 |-----------------------------------------------------------|------------|---------------------------------------------------------------------|
@@ -36,8 +29,6 @@ Windows provides support for several wireless networking technologies that enabl
 | Prohibit installation and configuration of Network Bridge | Enabled    | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance.                   |
 | Single Sign On 802.1x                                     | Enabled    | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance.                   |
 | Wireless Profile Configuration                            | Configured | Will be configured depending on the organisation requirements.      |
-
-{{% /alert %}}
 
 ### Related information
 
