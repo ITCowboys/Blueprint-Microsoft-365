@@ -1,8 +1,7 @@
+Enrolling iOS devices
 ---
-title: "Enrolling iOS devices"
-weight: 10
-description: "This section describes the design decisions associated with enrolling iOS endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with enrolling iOS endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Device enrolment registers the iOS devices into the corporate device management solution and ensures the device is then able to be managed by administrators.
 
@@ -14,13 +13,11 @@ Microsoft Intune provides three separate experience in enrolling the iOS devices
 * **Device Enrolment Manager (DEM)** – Device Enrolment Manager assigns a single Azure Active Directory account as the owner of the device. The end users cannot administer or purchase any apps on the device.
 * **User Enrolment** – User enrolment process requires users set up the iOS device and manually install Company Portal to register the device as Intune enrolled device. The device will be marked as a BYOD device.
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point   | Design Decision                                            | Justification                                                                                                                                                               |
 |------------------|------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enrolment method | Automated device enrolment through Apple Business Manager | Devices will be pre-configured before the device is handed over to the end user. This in line with ASD's iOS Secure Configuration Hardening guide for PROTECTED devices. |
+| Enrolment method | Automated device enrolment through Apple Business Manager | Devices will be pre-configured before the device is handed over to the end user. This in line with CIS's iOS Secure Configuration Hardening guide for PROTECTED devices. |
 
-{{% /alert %}}
 
 ### Related information
 
