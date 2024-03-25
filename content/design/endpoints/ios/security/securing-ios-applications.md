@@ -1,8 +1,7 @@
+Securing iOS applications
 ---
-title: "Securing iOS applications"
-weight: 10
-description: "This section describes the design decisions associated with securing applications on iOS endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with securing applications on iOS endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Mobile Application Management (MAM) in Intune enables configuration of managed applications within an iOS device. Managed applications enclose organisation applications within an application bubble. This bubble prevents accidental data spillage by preventing cutting and pasting, as well as enabling data sharing within the application bubble.
 
@@ -12,7 +11,6 @@ MAM provides the capability to configure iOS device applications. These configur
 * **Managed Application configuration** – Configure and secure managed application configuration within the device. These configurations enable and isolate managed applications to reside next to unmanaged applications.
 * **Per-app VPN** - Secure communication between applications on devices, and the Office 365 tenant. This will require the organisations VPN device setup to accept communication from the VPN connection from managed apps.
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point                                      | Design Decision                                                                                                                                                                                                                                                                                                  | Justification                                                                                                         |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -26,7 +24,6 @@ MAM provides the capability to configure iOS device applications. These configur
 | Microsoft Edge Configuration                        | Configured.<br>Set Microsoft Edge proxy and homepage URL to organisations Intranet                                                                                                                                                                                                                                    | Configured so Microsoft Edge is able to access organisations internal websites.                                            |
 | Microsoft Outlook                                   | Configured.<br>Ensure Contact list is added into Outlook Contact list rather than device                                                                                                                                                                                                                         | Configured so organisations contact list is maintained within managed application rather than the phone's contact details. |
 
-{{% /alert %}}
 
 ### Related information
 
