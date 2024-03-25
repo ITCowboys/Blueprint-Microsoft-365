@@ -1,8 +1,7 @@
+Windows Deployment
 ---
-title: "Windows Deployment"
-weight: 5
-description: "This section describes the design decisions associated with deployment of Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with deployment of Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 The type of deployment methods used for the Standard Operating Environment (SOE) will vary depending on the use of either a cloud native or hybrid configuration. Cloud native will typically utilise pre-installed or offline custom images with Windows Autopilot for the deployment method and utilise Intune as the ongoing management method.
 
@@ -17,8 +16,6 @@ Windows deployments will be based on either a deployment which is cloud native o
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
-
 | Decision Point    | Design Decision                                                                                                | Justification                                                                                                                                                                                   |
 |-------------------|----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Deployment method | Organisation light weight base image with Windows Autopilot and Intune deployments applied as during enrolment | An organisation specific light weight base image provides the benefit of removing all OEM applications and firmware prior to onboarding to the organisation through Intune & Windows Autopilot. |
@@ -27,13 +24,9 @@ Windows deployments will be based on either a deployment which is cloud native o
 
 ### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
-
 | Decision Point    | Design Decision                                                   | Justification                                                                                                                                                             |
 |-------------------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Deployment method | Organisation light-weight base image with MECM deployment applied | An organisation specific light weight base image provides the benefit of removing all OEM applications and firmware prior to onboarding to the organisation through MECM. |
-
-{{% /alert %}}
 
 ### Related information
 
