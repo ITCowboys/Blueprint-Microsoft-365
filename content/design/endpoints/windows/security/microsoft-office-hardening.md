@@ -1,14 +1,11 @@
+Microsoft Office Hardening
 ---
-title: "Microsoft Office Hardening"
-weight: 40
-description: "This section describes the design decisions associated with Microsoft Office on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with Microsoft Office on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 The following design components apply to the hardening of Microsoft 365 Apps for Enterprise.
 
 The Microsoft Office security settings detailed in this section are based on Microsoft best practice and ASD's [*Hardening Microsoft 365, Office 2021, Office 2019 and Office 2016*](https://www.cyber.gov.au/acsc/view-all-content/publications/hardening-microsoft-365-office-2021-office-2019-and-office-2016) guidance.
-
-{{% alert title="Design Decisions" color="warning" %}}
 
 * Attack Surface Reduction
   * Justification: To align with ASD's Microsoft Office hardening guidance.
@@ -132,7 +129,6 @@ D4F940AB-401B-4EFC-AADC-AD5F3C50688A
   * Send Office Feedback: Disabled
   * Send personal information: Disabled
 
-  {{% /alert %}}
 
   ### Related information
 
