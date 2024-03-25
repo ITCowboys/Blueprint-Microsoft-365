@@ -1,8 +1,7 @@
+Telemetry Collection
 ---
-title: "Telemetry Collection"
-weight: 35
-description: "This section describes the design decisions associated with telemetry collection on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with telemetry collection on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Windows 10/11 and Windows Server include the Connected User Experiences and Telemetry component, which uses Event Tracing for Windows (ETW) trace logging technology that gathers and stores diagnostic data events and data. The operating system and some Microsoft management solutions, such as MECM use the same logging technology.
 
@@ -17,14 +16,12 @@ Telemetry level options are:
 * Full – All info necessary to identify and help to fix problems, plus info from the Security, Basic, and Enhanced levels.
 
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point  | Design Decision | Justification                                                                                                             |
 |-----------------|-----------------|---------------------------------------------------------------------------------------------------------------------------|
 | Allow Telemetry | Enabled         | In line with the ASD's hardening guideline policy recommendations and meets requirements for future Desktop Analytics use. |
 | Telemetry Level | 2 – Enhanced    | Microsoft recommend Enhanced Limited for Desktop Analytics.                                                               |
 
-{{% /alert %}}
 
 ### Related information
 
