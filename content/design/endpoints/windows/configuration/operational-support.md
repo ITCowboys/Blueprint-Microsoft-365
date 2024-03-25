@@ -1,8 +1,7 @@
+Operational Support
 ---
-title: "Operational Support"
-weight: 100
-description: "This section describes the design decisions associated with operational support for Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with operational support for Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Windows 10 and 11, and supporting management tools, offer various Standard Operating Environment (SOE) support features to enable support staff to access a machine remotely or provide users with the option to perform automated repairs. The following support components are available to support Windows 10 and 11:
 
@@ -16,8 +15,6 @@ Windows 10 and 11, and supporting management tools, offer various Standard Opera
   * Remote Control within Microsoft Endpoint Configuration Manager (MECM) is configured in hybrid deployments.
   * Microsoft Teams assuming the user can share the desktop.
 
-{{% alert title="Design Decisions" color="warning" %}}
-
 | Decision Point            | Design Decision | Justification                                                                                                                                                                                                 |
 |---------------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Intune                    | Enabled         | Intune management functions cannot be disabled when a device is enrolled in Intune and Microsoft Entra ID.                                                                                                    |
@@ -27,7 +24,6 @@ Windows 10 and 11, and supporting management tools, offer various Standard Opera
 | Remote Desktop Client     | Enabled         | The Remote Desktop Client will be enabled for Windows 10 and 11 devices to enable access to remote services (e.g., servers).                                                                                  |
 | Remote Control via Teams  | Enabled         | Users can share the desktop within the Microsoft Teams application.                                                                                                                                           |
 
-{{% /alert %}}
 
 ### Related information
 
