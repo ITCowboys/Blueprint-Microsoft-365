@@ -1,8 +1,7 @@
+Microsoft OneDrive for Business
 ---
-title: "Microsoft OneDrive for Business"
-weight: 20
-description: "This section describes the design decisions associated with Microsoft OneDrive for Business."
----
+
+This section describes the design decisions associated with Microsoft OneDrive for Business.
 
 Microsoft OneDrive for Business provides a robust cloud storage platform for government organisations. This OneDrive for Business section considers the client component only. The configuration of the server component of OneDrive for Business is contained in the Office 365 Solution Overview document.
 
@@ -20,7 +19,6 @@ OneDrive Files On-Demand enables users to view, search for and interact with fil
 
 OneDrive enables users to work on content that is stored online in the cloud as well as store and synchronise content locally through the OneDrive for Business client. Synchronising this content between the client device and OneDrive storage can consume a considerable amount of bandwidth especially if the internet connection is slow. The OneDrive for Business client provides the capability to shape upload and download rates for synchronising content hence reducing the impact on the network. If the internet connection is too slow the end user can continue to work on the content locally and the content will be automatically synchronised by OneDrive for Business client when the internet connection speed improves.
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point                      | Design Decision                               | Justification                                                                                                                                                                                            |
 |-------------------------------------|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -36,7 +34,7 @@ OneDrive enables users to work on content that is stored online in the cloud as 
 | File Collaboration Policy           | Enabled                                       | File collaboration will be enabled to allow users to work collaboratively and increase productivity.                                                                                                     |
 | Sync Conflict Policy                | Let me choose to merge changes or keep copies | The OneDrive sync conflict policy will be configured to allow the user to choose.                                                                                                                        |
 
-{{% /alert %}}
+
 
 ### Related information
 
