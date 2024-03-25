@@ -1,8 +1,7 @@
+Microsoft Defender
 ---
-title: "Microsoft Defender"
-weight: 5
-description: "This section describes the design decisions associated with Microsoft Defender on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with Microsoft Defender on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Microsoft delivers several threat protection and mitigation capabilities in Windows Enterprise devices delivered through Microsoft Defender. These capabilities do not require additional agents and are manageable via Intune Endpoint Protection Profiles. The following details the Microsoft Defender capabilities:
 
@@ -25,7 +24,6 @@ Microsoft Defender Exploit guard comprises of the below features:
 * **Network protection** – Network protection extends the malware and social engineering protection offered by Microsoft Defender SmartScreen in Microsoft Edge to cover network traffic and connectivity on organisation devices.
 * **Controlled Folder Access** – Controlled folder access protects files in key system folders from changes made by malicious and suspicious apps.
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point                                       | Design Decision                                                                                                                                                                                                                                                                                                                       | Justification                                                                                                                             |
 |------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -38,7 +36,6 @@ Microsoft Defender Exploit guard comprises of the below features:
 | Microsoft Defender Credential Guard Configuration    | Enabled and configured                                                                                                                                                                                                                                                                                                                | Aligns with security and compliance requirements. Enabled without lock allows Microsoft Defender Credential Guard to be managed remotely. |
 | Microsoft Defender Firewall Configuration            | Enabled and configured                                                                                                                                                                                                                                                                                                                | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance.                                                                                        |
 
-{{% /alert %}}
 
 ### Related information
 
