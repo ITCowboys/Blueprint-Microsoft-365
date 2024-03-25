@@ -1,8 +1,7 @@
+Windows Hardening
 ---
-title: "Windows Hardening"
-weight: 10
-description: "This section describes the design decisions associated with Windows Defender Application Control on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with Windows Defender Application Control on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 The following design components apply to the hardening of Microsoft Windows 10 21H1 and above, including Windows 11. The Windows security settings detailed in this section are based on Microsoft best practice and ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations) guidance.
 
@@ -360,8 +359,6 @@ The following design components apply to the hardening of Microsoft Windows 10 2
 * Windows Search and Cortana
   * Justification: To align with the ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations*guidance.
   * Allow Cortana: Disabled
-
-  {{% /alert %}}
 
   ### Related information
 
