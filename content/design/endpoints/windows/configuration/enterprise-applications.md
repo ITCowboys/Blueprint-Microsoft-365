@@ -20,8 +20,6 @@ Packaging methodology should be inherited from existing organisation procedures 
 | Self Service                      | Company Portal          | Enable users to install the apps needed while ensuring the SOE remains as light weight as possible.             |
 | Packaging Methodology             | Organisation preference | Applications will be packaged according to organisation internal packaging standards and delivered via Intune. |
 
-{{% /alert %}}
-
 ### Hybrid deployments
 
 | Decision Point                    | Design Decision                        | Justification                                                                                                                                                                                                             |
