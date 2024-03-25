@@ -30,7 +30,7 @@ The Blueprint provides better practice guidance, configuration guides and templa
 
 Adopting the Blueprint is as much a business transformation as it is a configuration and implementation process. Implementation of the Blueprint will differ depending on an organisation's operating context and organisational culture. Organisations should implement the Blueprint in alignment with their existing change management, business processes and frameworks. 
 
-### Jumpstart Your Secure Microsoft 365 Journey with the Blueprin
+### Jumpstart Your Secure Microsoft 365 Journey with the Blueprint
 The Microsoft 365 Blueprint empowers organizations to confidently navigate their cloud migration. This comprehensive resource equips you with the essential tools to establish a solid foundation for secure and compliant configurations in Microsoft 365.
 
 Built on Industry Expertise:
