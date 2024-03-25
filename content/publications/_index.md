@@ -25,6 +25,6 @@ The Microsoft 365 Blueprint covers a wide range of topics, including:
 The following publications can be used for a deeper understanding of the requirements and needs:
 
 | Title												                       | Link	                 
-| ---------------------------------------------------| -------------------------------
+| ---------------------------------------------------| -----------------------------------
 | Technical Whitepaper NIS2 for Microsoft 365        | [Download](https://github.com/ITCowboys/Blueprint-Microsoft-365/blob/main/content/publications/technical-whitepaper-nis2-for-microsoft-365.pdf)
 
