@@ -1,8 +1,7 @@
+Enterprise Applications
 ---
-title: "Enterprise Applications"
-weight: 45
-description: "This section describes the design decisions associated with enterprise applications on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with enterprise applications on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Enterprise applications provide organisations and end users the functionality they require to perform day to day activities. Applications can be delivered to the users desktop by one of the following methods:
 
@@ -15,8 +14,6 @@ Packaging methodology should be inherited from existing organisation procedures 
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
-
 | Decision Point                    | Design Decision         | Justification                                                                                                  |
 |-----------------------------------|-------------------------|----------------------------------------------------------------------------------------------------------------|
 | Application Delivery Technologies | Deployed via Intune     | Applications deployed via Intune and will be installed during the build deployment.                            |
@@ -27,15 +24,11 @@ Packaging methodology should be inherited from existing organisation procedures 
 
 ### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
-
 | Decision Point                    | Design Decision                        | Justification                                                                                                                                                                                                             |
 |-----------------------------------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Application Delivery Technologies | Deployed via Intune or MECM            | Applications deployed via Intune and will be installed during the build deployment.<br>MECM can continue to be used for existing applications, however consideration should be made to migrate these to Intune in future. |
 | Self Service                      | Company Portal or MECM Software Center | Enable users to request install of specific apps while ensuring the SOE remains as light weight as possible.                                                                                                               |
 | Packaging Methodology             | Organisation preference                | Applications will be packaged according to organisation internal packaging standards and delivered via MECM or Intune.                                                                                                    |
-
-{{% /alert %}}
 
 ### Related information
 
