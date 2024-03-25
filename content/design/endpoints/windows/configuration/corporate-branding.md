@@ -1,8 +1,7 @@
+Corporate Branding
 ---
-title: "Corporate Branding"
-weight: 75
-description: "This section describes the design decisions associated with corporate branding on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+"This section describes the design decisions associated with corporate branding on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Corporate branding enables a consistent corporate user experience. Windows 10 and 11 permit the image displayed on the lock screen, logon screen and desktop wallpaper to be customised and support various resolutions. The appropriate resolution is selected based on an image file name. Windows will automatically select the appropriate image based on the current screen resolution. If a file matching the screen resolution cannot be found, a default image file is used, and the picture stretched to fit the screen.
 
@@ -10,7 +9,6 @@ Custom themes can be deployed to workstations either enforcing the theme or enab
 
 Although a system is capable of being assessed as PROTECTED, banners and backgrounds should not be set to PROTECTED in the SOE or desktop background until an IRAP assessment has been completed.
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point                         | Design Decision            | Justification                                                                                                    |
 |----------------------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -24,7 +22,6 @@ Although a system is capable of being assessed as PROTECTED, banners and backgro
 | Corporate Account Picture              | Default                    | The default account picture will be displayed as the user account picture to provide a consistent look and feel. |
 | User Ability to Change Account Picture | Disabled                   | Disabled to provide a consistent configuration for all organisation users.                                       |
 
-{{% /alert %}}
 
 ### Related information
 
