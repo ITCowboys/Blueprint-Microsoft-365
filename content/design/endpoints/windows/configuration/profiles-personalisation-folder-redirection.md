@@ -1,8 +1,7 @@
+Profiles, personalisation, and folder redirection
 ---
-title: "Profiles, personalisation, and folder redirection"
-weight: 95
-description: "This section describes the design decisions associated with profiles and personalisation on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with profiles and personalisation on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Profiles are a collection of data and settings for each user of a Windows computer. Examples of data captured as part of a user's profile are user settings, desktop shortcuts, and application settings.
 
@@ -18,24 +17,20 @@ Microsoft provide the following profile management solutions:
 
 Windows 10 and 11 provides two main roaming profile technologies in User Experience Virtualization (UE-V) and FSLogix. FSLogix is now the preferred Roaming Profile option as it provides a consistently higher performance than UE-V and can provide a cloud-based roaming profile when configured with suitable Azure cloud storage blobs.
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point     | Design Decision                | Justification                                                                                                                             |
 |--------------------|--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | Folder Redirection | Redirect Windows Known Folders | Users can continue using the folders they are familiar with. Files are automatically backed up to the users OneDrive folder in the cloud. |
 
-{{% /alert %}}
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point                         | Design Decision            | Justification                                                                                                                                                                                                                                             |
 |----------------------------------------|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Profile Type                           | Local Profiles             | Local profiles will be configured to support end-user assigned devices. This configuration assumes that users will not share devices and do not require profile backups.<br>Enterprise State Roaming will be enabled for key backup of key user settings. |
 | Known Folder Redirection Configuration | Configured as listed below | To enable user personalisation and provide backup of essential user data.                                                                                                                                                                                 |
 
-{{% /alert %}}
 
 Known Folder Redirection Configuration applicable to organisations leveraging a cloud native implementation.
 
@@ -55,14 +50,12 @@ Known Folder Redirection Configuration applicable to organisations leveraging a 
 
 ### Hybrid deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point                         | Design Decision  | Justification                                                                                                                                                                                                       |
 |----------------------------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Profile Type                           | Roaming Profiles | Roaming profiles will be configured to support end-user assigned devices. A roaming profile management product is recommended by the vendor, Microsoft.<br>This configuration assumes that users can share devices. |
 | Known Folder Redirection Configuration | configured below | To enable user personalisation and backup of essential user data.                                                                                                                                                   |
 
-{{% /alert %}}
 
 Known Folder Redirection Configuration applicable to organisations leveraging a hybrid implementation.
 
