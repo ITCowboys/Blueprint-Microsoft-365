@@ -1,8 +1,7 @@
+Windows Search and Cortana
 ---
-title: "Windows Search and Cortana"
-weight: 55
-description: "This section describes the design decisions associated with Windows search and Cortana on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with Windows search and Cortana on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 The Windows Search feature of Windows 10 and 11 provides indexing capability of the operating and file system enabling rapid searching for content stored on an attached hard disk. Once indexed, a file can be searched using either the file name or the content contained within the file.
 
@@ -14,14 +13,12 @@ Configuration of Cortana features can be managed by GPO or modern management (su
 
 Windows Search is text-based and is built into the local operating system.
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point | Design Decision                          | Justification                                                                                                   |
 |----------------|------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Cortana        | Disabled                                 | As per ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations) guidance the Cortana feature will be disabled to comply with security requirements. |
+| Cortana        | Disabled                                 | As per Microsoft 365 Blueprint [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations) guidance the Cortana feature will be disabled to comply with security requirements. |
 | Windows Search | Enabled and configured for local content | Windows search will be limited to local items only to prevent data leakage.                                     |
 
-{{% /alert %}}
 
 ### Related information
 
