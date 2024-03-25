@@ -1,8 +1,7 @@
+System Properties
 ---
-title: "System Properties"
-weight: 80
-description: "This section describes the design decisions associated with system properties on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with system properties on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 The System Properties window can be customised in several ways. Within the System Properties window, the Manufacturer and Model values can be displayed. Support information can also be populated which includes:
 
@@ -16,8 +15,6 @@ The system Computer Description can also be used to display the build date, time
 
 The Manufacturer value is used in the title string displayed in the support section, being "Manufacturer support". If the actual computer manufacturer were to be populated, then the support section heading would be "HP support", for example, which would be misleading for users. Setting the Manufacturer value to "Organisation" would set the support section heading to "Organisation support".
 
-{{% alert title="Design Decisions" color="warning" %}}
-
 | Decision Point       | Design Decision                                    | Justification                                                               |
 |----------------------|----------------------------------------------------|-----------------------------------------------------------------------------|
 | Company Name         | Not Configured                                     | Not required to support deployments.                                        |
@@ -28,8 +25,6 @@ The Manufacturer value is used in the title string displayed in the support sect
 | Support Phone Value  | Configured                                         | To simplify organisation desktop support.                                   |
 | Support URL Value    | Configured                                         | To simplify organisation desktop support.                                   |
 | Computer Description | Configured – Asset type and model                  | To simplify organisation desktop support.                                   |
-
-{{% /alert %}}
 
 ### Related information
 
