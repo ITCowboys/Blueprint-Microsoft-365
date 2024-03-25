@@ -1,8 +1,7 @@
+Windows Update and Patching
 ---
-title: "Windows Update and Patching"
-weight: 105
-description: "This section describes the design decisions associated with updates and patching on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with updates and patching on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Many updates released for operating systems and application contain bug fixes and security updates. Vulnerabilities can be exploited by malicious code or hackers and need to be patched as soon as possible.
 
@@ -24,8 +23,6 @@ Update rings are policies that are assigned to groups of devices. Intune can def
 
 To deploy patches to endpoints as quickly as possible, client-side settings should not restrict or delay the installation of patches where it does not interfere with critical operation or cause loss of data due to unexpected reboots.
 
-{{% alert title="Design Decisions" color="warning" %}}
-
 | Decision Point            | Design Decision                                                          | Justification                                                                                                                                                                                                                                                                                           |
 |---------------------------|--------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Patching technology       | Organisation preference of Intune, MECM or WSUS                          | For cloud native deployments, Intune is the only option available.<br><br>For hybrid deployments, all three options are available for implementation. Intune provides a simpler approach to patching whilst MECM and WSUS provide more granular control of patch deployment.                            |
@@ -36,7 +33,6 @@ To deploy patches to endpoints as quickly as possible, client-side settings shou
 | Microsoft Product Updates | Enabled                                                                  | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance.                                                                                                                                                                                                                                                       |
 | Patching Frequency        | Existing organisation patch scheduling based on Essential Eight guidance | The organisations existing patch schedule should reflect:<br><br>Patches, updates or vendor mitigations for security vulnerabilities in operating systems are applied two weeks of release, or within 48 hours if an exploit exists. <br>Meets ASD's [*Essential Eight*](https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight) guidance for patching operating systems. |
 
-{{% /alert %}}
 
 ### Related information
 
