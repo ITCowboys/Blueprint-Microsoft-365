@@ -1,8 +1,7 @@
+Drivers and Peripherals
 ---
-title: "Drivers and Peripherals"
-weight: 5
-description: "This section describes the design decisions associated with drivers and peripherals on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with drivers and peripherals on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Drivers enable hardware and software to function within a SOE. Drivers are essentially written code that enable Windows to recognise physical components of a computer such as printers, keyboards, mouse, graphics cards and peripherals. It is critical these drivers are supported on the Operating System version and are deployed at the right time.
 
@@ -20,8 +19,6 @@ When restricting the installation of peripherals, there are many common human in
 
 Bluetooth pairing and allowed services are also controllable. The default state of Windows allows all services, thus care should be taken to define only the [Bluetooth services](https://learn.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) required.
 
-{{% alert title="Design Decisions" color="warning" %}}
-
 | Decision Point                | Design Decision | Justification                                                                                                                                                                                                                                                                                                      |
 |-------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Driver Integration            | Configured      | Deployed via Microsoft Windows Update which aligns with ASD's [*Hardening Microsoft Windows 10 version 21H1 Workstations*](https://www.cyber.gov.au/resources-business-and-government/maintaining-devices-and-systems/system-hardening-and-administration/system-hardening/hardening-microsoft-windows-10-version-21h1-workstations) guidance.                                                                                                                                                                                                                                         |
@@ -32,8 +29,6 @@ Bluetooth pairing and allowed services are also controllable. The default state 
 | Workstation Device Drivers    | Configured      | Deployed via Microsoft Windows Update which aligns with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance. Specific vendor updates can be deployed through Intune if Windows Update does not provide a suitable driver.                                                                                                                            |
 | Printer Drivers               | Configured      | Deployed via Microsoft Windows Update which aligns with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance.                                                                                                                                                                                                                                         |
 | Bluetooth Restrictions        | Configured      | The organisation should define a list of approved Bluetooth services to only those necessary, using [Intune device restrictions profile](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/mde-device-control-device-installation?view=o365-worldwide#limit-services-that-use-bluetooth). |
-
-{{% /alert %}}
 
 ### Related information
 
