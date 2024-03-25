@@ -1,8 +1,7 @@
+Power Management
 ---
-title: "Power Management"
-weight: 50
-description: "This section describes the design decisions associated with power management on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with power management on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 The power settings in Windows can be fully managed by Intune, Microsoft Endpoint Configuration Manager (MECM), or Group Policy. Individual settings can be enforced or set as defaults that can then be changed by the user as desired.
 
@@ -11,8 +10,6 @@ Users can adjust power and performance options via the system tray power slider 
 * **Better Battery / Recommended** - Better Battery / Recommended provides extended battery life than the default settings on previous versions of Windows.
 * **Better Performance** - Better Performance is the default slider mode that slightly favours performance over battery life and is appropriate for users who want to trade-off power for better performance of applications.
 * **Best Performance** - Best Performance prioritizes performance over battery life.
-
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point                                        | Design Decision                                  | Justification                                                                                                                                                  |
 |-------------------------------------------------------|--------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -33,8 +30,6 @@ Users can adjust power and performance options via the system tray power slider 
 | Turned off hybrid sleep (plugged in)                  | Enabled                                          | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance.                                                                                                             |
 | Show hibernate in the power options menu              | Disabled                                         | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance.                                                                                                             |
 | Show sleep in the power options menu                  | Disabled                                         | To align with ASD's *Hardening Microsoft Windows 10 version 21H1 Workstations* guidance.                                                                                                             |
-
-{{% /alert %}}
 
 ### Related information
 
