@@ -1,8 +1,7 @@
+Windows Defender Application Control
 ---
-title: "Windows Defender Application Control"
-weight: 20
-description: "This section describes the design decisions associated with Windows Defender Application Control on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with Windows Defender Application Control on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Application control is a crucial line of defence for protecting enterprises given today's threat landscape, and it has an inherent advantage over traditional antivirus solutions. Specifically, application control moves away from the traditional application trust model where all applications are assumed trustworthy by default to one where applications must earn trust in order to run. ASD frequently cite application control as one of the most effective means for addressing the threat of executable file-based malware (.exe, .dll, etc.).
 
@@ -15,7 +14,6 @@ To reduce management overhead, WDAC enables the use of managed installers; such 
 
 When deploying WDAC it is important that it is deployed utilising audit mode prior to enforcement. 
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point                                            | Design Decision                                                         | Justification                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -39,7 +37,6 @@ When deploying WDAC it is important that it is deployed utilising audit mode pri
 | Intelligent Security Graph connection                     | Disabled                                                                | The Intelligent Security Graph connection allows applications to be run if they are deemed as good and there is no explicit block rule configured.                                                                                                                                                                                                                                                                                                              |
 | Blocking of browsers and email clients for administrators | Configured via AppLocker blocklist                                      | To provide technical controls to prevent administrators from accessing internet content or emails.                                                                                                                                                                                                                                                                                                                                                              |
 
-{{% /alert %}}
 
 ### Related information
 
