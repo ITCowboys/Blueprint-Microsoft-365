@@ -1,8 +1,7 @@
+Activation and licencing
 ---
-title: "Activation and licencing"
-weight: 25
-description: "This section describes the design decisions associated with activation and licencing of Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with activation and licencing of Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Licence keys and activation processes are leveraged by Microsoft to ensure that the device or user is eligible to use the feature or run the product (i.e. Windows 10).
 
@@ -15,7 +14,6 @@ Office 365 products require licensing to enable full functionality and support. 
 
 * **Office 365 based activation** - Office 365 is Microsoft's productivity solution in the cloud. Office 365 has two sets of suites, one for the small and medium business segment and one for the enterprise segment. These suites are sold across different channels and programs designed to meet each segment's needs. Products are assigned to users and then activated through the online Microsoft Office 365 licensing service.
 
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point                                                               | Design Decision                                                                      | Justification                                                                                                                                                                                                                                                                                                                                                                                                           |
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -23,7 +21,6 @@ Office 365 products require licensing to enable full functionality and support. 
 | Windows Activation Method                                                    | Windows Subscription                                                                 | All devices will meet the requirements for Subscription Activation (a supported [Windows 10 version](https://learn.microsoft.com/windows/release-health/release-information) or [Windows 11 version](https://learn.microsoft.com/windows/release-health/windows11-release-information) and internet access), as this is the simplest solution to implement and manage as part of the licensing entitlement. |
 | Office Activation Method                                                     | Office 365 Subscription                                                              | All devices meet the requirement for Office 365 activation (internet access) as this is the simplest solution to implement and manage as part of the licensing entitlement.                                                                                                                                                                                                                                             |
 
-{{% /alert %}}
 
 ### Related information
 
