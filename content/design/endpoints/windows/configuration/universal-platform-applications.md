@@ -1,14 +1,11 @@
+Universal Platform Applications
 ---
-title: "Universal Platform Applications"
-weight: 35
-description: "This section describes the design decisions associated with universal platform applications on Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with universal platform applications on Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Universal Windows Platform (UWP) applications are applications that run on Windows 10 and newer devices. Developers can build line of business Windows Store apps using standard programming languages. The Windows Runtime (WinRT) supports C#, C++, JavaScript and Visual Basic.
 
 UWP applications cannot access user resources unless the application specifically declares a need to use those resources. This ensures a clear connection between apps and the types of resources the app has access to.
-
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point        | Design Decision | Justification                                                                                                                                                                                             |
 |-----------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
