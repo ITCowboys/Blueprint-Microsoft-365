@@ -1,8 +1,7 @@
+Delivery Optimisation
 ---
-title: "Delivery Optimisation"
-weight: 115
-description: "This section describes the design decisions associated with delivery optimisation of Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with delivery optimisation of Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Delivery optimisation makes use of configurable peer-to-peer or caching technologies to decrease the internet bandwidth consumed by patches and updates.
 
@@ -30,25 +29,17 @@ BranchCache provides two modes of operation being:
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
-
 | Decision Point                                                                            | Design Decision                                | Justification                                                                                                        |
 |-------------------------------------------------------------------------------------------|------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Delivery Optimisation Method / Feature - single subnet per physical office                | HTTP blended with peering behind same NAT      | Good for single subnet per office as content will be peered per office only. This will not saturate WAN connections. |
 | Delivery Optimisation Method / Feature - single subnet spanning multiple physical offices | HTTP blended with peering across private group | Provides the ability to group workstations so only the groupings can peer content.                                   |
 
-{{% /alert %}}
-
 ### Hybrid deployments
-
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point                         | Design Decision        | Justification                                                                         |
 |----------------------------------------|------------------------|---------------------------------------------------------------------------------------|
 | Delivery Optimisation Method / Feature | BranchCache            | Existing MECM solution exists with BranchCache Delivery Optimisation feature enabled. |
 | Mode of operation                      | Distributed Cache Mode | Existing MECM solution exists with BranchCache configured in Distribute Cache Mode.   |
-
-{{% /alert %}}
 
 ### Related information
 
