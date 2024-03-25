@@ -1,8 +1,7 @@
+Windows Management
 ---
-title: "Windows Management"
-weight: 10
-description: "This section describes the design decisions associated with management of Windows 10 and 11 endpoints configured according to guidance in ASD's Blueprint for Secure Cloud."
----
+
+This section describes the design decisions associated with management of Windows 10 and 11 endpoints configured according to guidance in Microsoft 365 Blueprint for Secure Cloud.
 
 Windows 10 and 11 can be managed via Intune or Microsoft Endpoint Configuration Manager (MECM), or a combination of both. The configuration of Windows management will depend upon which technologies are available to organisations and whether a hybrid deployment is required.
 
@@ -39,24 +38,16 @@ There are many benefits to going cloud native or hybrid co-management utilising 
 
 ### Cloud native deployments
 
-{{% alert title="Design Decisions" color="warning" %}}
-
 | Decision Point    | Design Decision                | Justification                                                                                                            |
 |-------------------|--------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Management method | Cloud native Intune management | Cloud native implementation offers a simple and efficient implementation. Single console to manage both Windows and iOS. |
 
-{{% /alert %}}
-
 ### Hybrid deployments
-
-{{% alert title="Design Decisions" color="warning" %}}
 
 | Decision Point    | Design Decision                                                                 | Justification                                                                                                                                                                                                                                                                                              |
 |-------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Management method | Hybrid with MECM co-management enabled.                                         | Intune integration is required to enable features such as Conditional Access. <br>MECM co-management offers flexibility for the organisation to take advantage of cloud services immediately or pilot and move individual workloads across when ready while leveraging existing configuration on-premises. |
 | Management tool   | Organisation preference for Intune or MECM managing endpoints in co-management. | Each organisation has a different level of investment and different maturity in MECM and cloud products. Co-management has several options to meet the unique requirements of each organisation.                                                                                                           |
-
-{{% /alert %}}
 
 ### Related information
 
